@@ -10,7 +10,7 @@
 #include <fcntl.h>
 #include <netdb.h>
 #include <unistd.h>
-#include <sys/epoll.h>
+//#include <sys/epoll.h>
 #include "const.h"
 #include "util.h"
 #include "multithreading.h"

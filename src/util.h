@@ -20,6 +20,8 @@
 #include <sys/socket.h>
 #include <sys/time.h>
 #include <sys/resource.h>
+#include <netinet/in.h>
+#include <pthread_np.h>
 #include "const.h"
 #include "logger.h"
 #include "ntttcp.h"

@@ -288,6 +288,8 @@ int ntttcp_server_listen(struct ntttcp_stream_server *ss)
 
 int ntttcp_server_epoll(struct ntttcp_stream_server *ss)
 {
+	return ERROR_EPOLL;
+#if 0
 	int err_code = NO_ERROR;
 	char *log = NULL;
 	bool verbose_log = ss->verbose;
@@ -432,6 +434,7 @@ int ntttcp_server_epoll(struct ntttcp_stream_server *ss)
 	close(efd);
 	close(ss->listener);
 	return err_code;
+#endif
 }
 
 int ntttcp_server_select(struct ntttcp_stream_server *ss)

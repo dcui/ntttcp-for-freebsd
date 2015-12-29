@@ -329,6 +329,7 @@ int run_ntttcp_receiver(struct ntttcp_test_endpoint *tep)
 
 	return err_code;
 }
+#define cpu_set_t cpuset_t
 
 int main(int argc, char **argv)
 {
